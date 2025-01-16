@@ -1,3 +1,53 @@
-.meal {
-    width: 100%;
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .container picture img{
+        width: 100%;
+        border: 2px solid black;
+        border-radius:20px ;
+    }
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 850px) {
+   
+    .container picture {
+        width: 100%;
+    }
+
+
+    .container picture img {
+      width: 100%;
+      border: none;
+    }
+  }
+ 
+  @media screen and (min-width: 851px) and (max-width: 1200px) {
+    .container {
+      justify-content: space-between;
+    }
+
+    .container picture {
+        width: 48%;
+    }
+
 }
+
+@media screen and (min-width: 1201px){
+    .container {
+      justify-content: space-between;
+    }
+
+    .container picture {
+        width: 30%;
+    }
+  
+    .container picture img {
+        width: 100%;
+        border: 2px solid black;
+    }
+  }
+
