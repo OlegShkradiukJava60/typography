@@ -1,0 +1,42 @@
+
+html{
+    font-size: 62.5%;
+}
+.gallery__item-image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.gallery__item-title{
+    display: block;
+    width: 20rem;
+    font-size: 2.5rem;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.gallery__item{
+    border: 2px solid blue;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 20rem;
+    display: inline-block;
+}
+
+.logo {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.gallery{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto
+    ;
+}
