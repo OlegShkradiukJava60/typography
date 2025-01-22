@@ -1,42 +1,139 @@
 
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
+
+body{
+  margin: 0;
+  background-image: url(/images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .gallery__item-image {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 20px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+.logo{
+  background-color: gray;
+}
+
+.header-title{
+  margin: 0;
+}
+
+
+.detailed-image{
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-top: 10%;
+}
+
+
+.dog {
+  width: 80%;
+  height: 50%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row-reverse;
 }
 
 
 .gallery__item-title{
-    display: block;
-    width: 20rem;
-    font-size: 2.5rem;
-    background-color: aliceblue;
-    text-align: center;
+  display: block;
+  width: 20rem;
+  font-size: 2.5rem;
+  background-color: aliceblue;
+  text-align: center;
 }
 
 .gallery__item{
-    border: 2px solid blue;
-    border-radius: 40px;
-    overflow: hidden;
-    width: 20rem;
-    display: inline-block;
+  border: 2px solid blue;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 20em;
+  height: auto;
+  display: inline-block;
 }
 
 .logo {
-    font-size: 4rem;
-    text-align: center;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .gallery{
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow-y: auto
-    ;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+  max-height: 76.5vh;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%; 
+  }
+
+  .gallery {
+    gap: 8px;
+    justify-content: center;
+    
+  }
+
+  .dog {
+    width: 80%;
+    height: 50%;
+  }
+
+  .gallery__item {
+    width: 180px;
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+  .logo {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+  .gallery {
+    gap: 6px;
+  }
+
+  .gallery__item {
+    width: 30%;
+    height: auto;
+  }
+
+  .gallery__item-title {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .detailed-image {
+    font-size: 2rem;
+    margin-top: 5%;
+    align-items: center;
+  }
 }

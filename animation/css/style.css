@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.box{
+ width: 150px;
+ height: 150px;
+ background-color: gray;
+ font-size: 1.3rem;
+ overflow: auto;
+ transition: transform 1s cubic-bezier(.11,.96,1,.31), background-color 2s;
+}
+
+.box:hover {
+    /* transform: rotate(45deg); */
+    /* transform: scale(1.5) rotate(-45deg); */
+    /* transform: skew(10deg); */
+    /* transform: translate(20px, 30px); */
+    /* transform: perspective(400px) translateZ(180px); */
+    transform: perspective(200px) rotateY(-30deg) ;
+    background-color: aqua;
+
+
+
+}
