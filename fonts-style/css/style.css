@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+  background-color: bisque;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.logo {
+  border: 1px solid red;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Lakeshore", sans-serif;
+}
+
+.detailedContainer--title {
+  padding: 10px;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  border: 1px solid lightblue;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Airstream", sans-serif;
+  max-width: 800px;
+}
+
+@media (min-width: 1024px) {
+  .detailedContainer--title:hover {
+    max-width: 90%;
+    height: auto;
+  }
+}
+.gallery--item_title {
+    padding: 10px;
+  border: 1px solid red;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+}
